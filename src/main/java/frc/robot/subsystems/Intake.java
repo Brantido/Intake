@@ -25,6 +25,6 @@ public class Intake extends TimedRobot {
       rollerMotor2.set(0.0);
       rollerMotor3.set(0.5);
 
-    }
+    } 
   }
 }
