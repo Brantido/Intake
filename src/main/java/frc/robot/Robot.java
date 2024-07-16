@@ -81,9 +81,9 @@ public class Robot extends TimedRobot {
     if (m_autonomousCommand != null) {
       m_autonomousCommand.cancel();
     }
-
-    controller.x().onTrue(intake.toggleExtension());
-    controller.y().whileTrue(intake.runIntake());
+// controller inputs 
+    controller.x().onTrue(intake.toggleExtension()); //extend & retract
+    controller.y().whileTrue(intake.runIntake()); // intake toggle
   }
 
   /** This function is called periodically during operator control. */
