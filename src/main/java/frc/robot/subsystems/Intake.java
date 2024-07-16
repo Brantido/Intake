@@ -4,12 +4,12 @@ import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.motorcontrol.PWMSparkMax;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-
+      // Import all necessary items
 public class Intake extends TimedRobot {
   private final PWMSparkMax rollerMotor1 = new PWMSparkMax(0);  
   private final PWMSparkMax rollerMotor2 = new PWMSparkMax(1);  
   private final PWMSparkMax rollerMotor3 = new PWMSparkMax(2);  
-
+      // Sets up and initializes the motor
 
   public void Update(XboxController controller) {
     SmartDashboard.putBoolean("Button Pressed", controller.getRawButton(1));
